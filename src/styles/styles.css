@@ -43,7 +43,7 @@ p {
 
 .container .phone {
   position: relative;
-  margin-top: 50px;
+  margin-top: 10%;
   max-width: 300px;
   min-width: 300px;
   height: auto;
