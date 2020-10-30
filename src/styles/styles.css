@@ -43,7 +43,7 @@ p {
 
 .container .phone {
   position: relative;
-  margin-top: 10%;
+  margin-top: 50px;
   max-width: 300px;
   min-width: 300px;
   height: auto;
@@ -281,6 +281,9 @@ p {
 }
 
 @media only screen and (min-width: 800px) {
+  .phone {
+    margin: 0;
+  }
   body {
     overflow: hidden;
   }
