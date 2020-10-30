@@ -2,7 +2,6 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: Rubik, sans-serif;
-  background-color: #f5f3f7;
 }
 
 p {
@@ -13,9 +12,9 @@ p {
   position: absolute;
   top: 0;
   z-index: 1000;
-  width: 100%;
+  width: 60%;
   height: 70%;
-  background-color: #e942ff;
+  background-color: #8838ff;
   border-bottom-right-radius: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -35,15 +34,15 @@ p {
           flex-direction: column;
   position: relative;
   z-index: 2000;
-  margin: 0px 40px;
+  margin-top: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  justify-items: center;
 }
 
 .container .phone {
   position: relative;
-  margin-top: 50px;
   max-width: 300px;
   min-width: 300px;
   height: auto;
@@ -144,6 +143,7 @@ p {
 .container .phone__container-text .received {
   margin-left: 5px;
   border-radius: 15px 15px 15px 10px;
+  color: #6e5d7e;
 }
 
 .container .phone__container-text .sent {
@@ -151,12 +151,12 @@ p {
   margin-right: 5px;
   background-color: white;
   border-radius: 15px 15px 10px 15px;
+  color: #9241c8;
 }
 
 .container .phone__container-text .message {
   display: inline-block;
   font-size: 12px;
-  color: #8838ff;
   margin-bottom: 8px;
   padding: 8px;
   background-color: #e3e0e6;
@@ -240,8 +240,7 @@ p {
 
 .container .phone__container-text .input p {
   font-size: 12px;
-  color: black;
-  opacity: .7;
+  color: #c6cacd;
   margin-left: 5px;
 }
 
@@ -274,7 +273,8 @@ p {
 
 .container .description .text {
   text-align: center;
-  color: #3e2753;
+  padding: 0px 1%;
+  color: #a39daa;
   opacity: .8;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -283,9 +283,6 @@ p {
 @media only screen and (min-width: 800px) {
   .phone {
     margin: 0;
-  }
-  body {
-    overflow: hidden;
   }
   .decoration {
     width: 600px;
@@ -302,27 +299,29 @@ p {
     right: 0;
     width: 600px;
     height: 80vh;
-    background-color: #dcd9de;
+    background-color: #f5f3f7;
     z-index: 1000;
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
-    -webkit-transform: translateX(22%);
-            transform: translateX(22%);
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
   }
   .container {
+    margin: 0;
+    height: 100vh;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 100vh;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0px 22%;
   }
   .container .description {
-    margin-left: 60px;
-    text-align: left;
+    margin-left: 7.5rem;
   }
   .container .description h1 {
     text-align: left;
@@ -331,6 +330,7 @@ p {
   .container .description .text {
     text-align: left;
     font-size: 22px;
+    width: 550px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
